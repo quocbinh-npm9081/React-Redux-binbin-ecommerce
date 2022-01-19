@@ -1,0 +1,28 @@
+.product__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.active {
+    background-color: #0000;
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 967px) {
+    .buttons {
+        overflow-y: scroll;
+        justify-content: start !important;
+        scrollbar-width: none; //hide scrollbar with Mozila
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .btn {
+        font-size: 0.7rem !important;
+    }
+}

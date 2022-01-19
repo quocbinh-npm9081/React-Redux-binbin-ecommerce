@@ -1,0 +1,12 @@
+.imgMobile {
+    display: none !important;
+}
+
+@media only screen and (max-width: 967px) {
+    .imgDesktop {
+        display: none !important;
+    }
+    .imgMobile {
+        display: block !important;
+    }
+}
