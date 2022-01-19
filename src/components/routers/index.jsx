@@ -13,6 +13,7 @@ const Routers = () => {
             <Route path='/products/:id' element={<Product></Product>}></Route>
             <Route exact path='/products' element={<Products></Products>}></Route>
             <Route exact path='/home' element={<Home></Home>}></Route>
+            <Route exact path='/React-Redux-binbin-ecommerce/' element={<Home></Home>}></Route>
             <Route exact path='/' element={<Home></Home>}></Route>
         </Routes>
 
