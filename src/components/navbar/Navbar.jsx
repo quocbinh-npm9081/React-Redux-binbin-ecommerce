@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './navbar.scss'
-
-
+import { useSelector } from 'react-redux';
 
 
 
 const Navbar = () => {
 
+    const state = useSelector((state) => state.handleCart)
 
     return (
         <div>
@@ -31,26 +30,27 @@ const Navbar = () => {
                             <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
                     </ul>
-                </div>
-                <div className="buttons d-flex">
-                    <Link className="btn btn-outline-dark " to="/login">
-                        <span>
-                            Login
-                        </span>
-                    </Link>
-                    <Link className="btn btn-outline-dark ms-2" to="/register">
-                        <span>
-                            Register
-                        </span>
-                    </Link>
-                    <Link className="btn btn-outline-dark ms-2" to="/cart">
-                        <i className='bx bx-cart-alt'></i>
-                        <span>
-                            (0)
-                        </span>
-                    </Link>
+                    <div className="buttons d-flex">
+                        <Link className="btn btn-outline-dark " to="/login">
+                            <span>
+                                Login
+                            </span>
+                        </Link>
+                        <Link className="btn btn-outline-dark ms-2" to="/register">
+                            <span>
+                                Register
+                            </span>
+                        </Link>
+                        <Link className="d-flex align-items-center btn btn-outline-dark ms-2" to="/cart">
+                            <i className='bx bx-cart-alt'></i>
+                            <span>
+                                ({state.length})
+                            </span>
+                        </Link>
 
+                    </div>
                 </div>
+
             </nav >
         </div >
     );

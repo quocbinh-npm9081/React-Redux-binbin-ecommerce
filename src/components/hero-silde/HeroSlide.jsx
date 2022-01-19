@@ -9,7 +9,7 @@ const HeroSlide = () => {
             </div>
             <div className="carousel-inner">
 
-                <div className="carousel-item active" data-bs-interval="10000">
+                <div className="carousel-item active" data-bs-interval="6000">
                     <img src="https://media.boohoo.com/i/boohooamplience/Valentines_Desktop_Second_SECONDARY" className="imgDesktop  w-100 " alt="..." />
                     <img src="https://media.boohoo.com/i/boohooamplience/220110_Vday_Mobile_Second" className="imgMobile  w-100" alt="..." />
 
