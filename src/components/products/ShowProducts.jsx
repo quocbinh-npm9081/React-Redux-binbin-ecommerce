@@ -35,6 +35,7 @@ const ShowProducts = ({ filter, setFilter, data }) => {
     }];
     const [buttons, setButtons] = useState(dataBtns);
     const setFilterProducts = (category, index) => {
+
         setActiveBtn(index);
         if (category === 'all') {
             setFilter(data);
@@ -44,6 +45,7 @@ const ShowProducts = ({ filter, setFilter, data }) => {
         }
     }
     const setActiveBtn = (i) => {
+
         const newBtnActive = dataBtns.map((btn, index) => index === i ? { ...btn, active: true } : { ...btn, active: false });
         setButtons(newBtnActive);
     }
@@ -54,7 +56,7 @@ const ShowProducts = ({ filter, setFilter, data }) => {
             <div className='d-flex  buttons m-4'>
                 {
                     buttons.map((btn, index) => (
-                        <Button key={index} className={btn.active ? `btn btn-outline-dark me-2 ms-2 active` : `btn btn-outline-dark me-2 ms-2`} setFilterProducts={setFilterProducts} data={btn.dataSet}>{btn.title}</Button>
+                        <Button key={index} index={index} className={btn.active ? `btn btn-outline-dark me-2 ms-2 active` : `btn btn-outline-dark me-2 ms-2`} setFilterProducts={setFilterProducts} data={btn.dataSet}>{btn.title}</Button>
                     ))
                 }
 
