@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-Redux-binbin-ecommerce/static/css/main.b3d79b7b.css",
-    "main.js": "/React-Redux-binbin-ecommerce/static/js/main.288a028b.js",
+    "main.js": "/React-Redux-binbin-ecommerce/static/js/main.ed024c00.js",
     "index.html": "/React-Redux-binbin-ecommerce/index.html",
     "main.b3d79b7b.css.map": "/React-Redux-binbin-ecommerce/static/css/main.b3d79b7b.css.map",
-    "main.288a028b.js.map": "/React-Redux-binbin-ecommerce/static/js/main.288a028b.js.map"
+    "main.ed024c00.js.map": "/React-Redux-binbin-ecommerce/static/js/main.ed024c00.js.map"
   },
   "entrypoints": [
     "static/css/main.b3d79b7b.css",
-    "static/js/main.288a028b.js"
+    "static/js/main.ed024c00.js"
   ]
 }
